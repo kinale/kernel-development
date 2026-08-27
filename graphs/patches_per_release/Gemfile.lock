@@ -1,19 +1,32 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    gruff (0.10.0)
+    bigdecimal (4.1.2)
+    gruff (0.32.0)
+      bigdecimal (>= 3.0)
       histogram
-      rmagick
+      rmagick (>= 5.5)
     histogram (0.2.4.1)
-    pkg-config (1.5.5)
-    rmagick (5.3.0)
+    observer (0.1.2)
+    pkg-config (1.6.5)
+    rmagick (7.1.1)
+      observer (~> 0.1)
       pkg-config (~> 1.4)
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   gruff
 
+CHECKSUMS
+  bigdecimal (4.1.2) sha256=53d217666027eab4280346fba98e7d5b66baaae1b9c3c1c0ffe89d48188a3fbd
+  gruff (0.32.0) sha256=7bf4cbdae98108181c0fefe7d13a337dc48abc577a7ff42813bdb468cf6ca630
+  histogram (0.2.4.1) sha256=9a6e379172b88ea842ab71700a535dd037185a4e17abcce742c7444679ae2abc
+  observer (0.1.2) sha256=d8a3107131ba661138d748e7be3dbafc0d82e732fffba9fccb3d7829880950ac
+  pkg-config (1.6.5) sha256=33f9f81c5322983d22b439b8b672f27777b406fea23bfec74ff14bbeb42ec733
+  rmagick (7.1.1) sha256=21e70bcd63d0aadb55845ac98450cef7043d9e6e8403f2d135e8e332c1cc119b
+
 BUNDLED WITH
-   2.1.4
+  4.0.3

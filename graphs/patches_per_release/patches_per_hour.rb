@@ -36,8 +36,8 @@ g.theme = Gruff::Themes::PASTEL
 #g.theme = Gruff::Themes::THIRTYSEVEN_SIGNALS
 
 g.hide_legend = true
-#g.title_font = 'Bitter-Regular'
-g.font = 'Bitter'
+g.title_font = 'Bitter-Regular'
+#g.font = 'Bitter'
 
 g.y_axis_increment = 2
 g.baseline_value = 0
