@@ -1,14 +1,6 @@
 require 'gruff'
 g = Gruff::Line.new(2048)
 g.title = 'CVE fixes per release'
-#g.labels = { 0 => '5/6', 1 => '5/15', 2 => '5/24', 3 => '5/30', 4 => '6/4',
-#             5 => '6/12', 6 => '6/21', 7 => '6/28' }
-#g.data ' ', [25, 36, 86, 39, 25, 31, 79, 88]
-#g.data :Charles, [80, 54, 67, 54, 68, 70, 90, 95]
-#g.data :Julie, [22, 29, 35, 38, 36, 40, 46, 57]
-#g.data :Jane, [95, 95, 95, 90, 85, 80, 88, 100]
-#g.data :Philip, [90, 34, 23, 12, 78, 89, 98, 88]
-#g.data :Arthur, [5, 10, 13, 11, 6, 16, 22, 32]
 
 g.labels = {
   0 => '6.9',
@@ -27,11 +19,7 @@ g.labels = {
   13 => '7.2'
 }
 
-#g.theme = Gruff::Themes::GREYSCALE
-#g.theme = Gruff::Themes::ODEO
 g.theme = Gruff::Themes::PASTEL
-#g.theme = Gruff::Themes::RAILS_KEYNOTE
-#g.theme = Gruff::Themes::THIRTYSEVEN_SIGNALS
 
 g.hide_legend = true
 g.title_font = 'Bitter-Regular'
@@ -61,4 +49,84 @@ g.data(' ', [
         2049],
 	'#72AE6E') # green
 
-g.write('cves_per_release.png')
+g.write('cves_fixed_per_release.png')
+
+g = Gruff::Line.new(2048)
+g.title = 'CVEs created per release'
+
+g.labels = {
+  0 => '5.4',
+  1 => '5.5',
+  2 => '5.6',
+  3 => '5.7',
+  4 => '5.8',
+  5 => '5.9',
+  6 => '5.10',
+  7 => '5.11',
+  8 => '5.12',
+  9 => '5.13',
+  10 => '5.14',
+  11 => '5.15',
+  12 => '5.16',
+  13 => '5.17',
+  14 => '5.18',
+  15 => '5.19'
+}
+
+g.theme = Gruff::Themes::PASTEL
+
+g.hide_legend = true
+g.title_font = 'Bitter-Regular'
+#g.font = 'Bitter'
+
+g.y_axis_increment = 100
+g.baseline_value = 0
+g.baseline_color = 'white'
+#g.hide_dots = true
+#g.show_vertical_markers = true
+#g.hide_lines = true
+
+g.data(' ', [
+        175,
+        187,
+        198,
+        213,
+        191,
+        173,
+        254,
+        211,
+        215,
+        282,
+        297,
+        455,
+        231,
+        254,
+        265,
+        296],
+	'#72AE6E') # green
+
+g.write('cves_created_per_release.png')
+
+#Linux 6.0:	304
+#Linux 6.1:	194
+#Linux 6.2:	248
+#Linux 6.3:	226
+#Linux 6.4:	261
+#Linux 6.5:	211
+#Linux 6.6:	242
+#Linux 6.7:	293
+#Linux 6.8:	366
+#Linux 6.9:	252
+#Linux 6.10:	265
+#Linux 6.11:	276
+#Linux 6.12:	264
+#Linux 6.13:	230
+#Linux 6.14:	221
+#Linux 6.15:	266
+#Linux 6.16:	243
+#Linux 6.17:	166
+#Linux 6.18:	213
+#Linux 6.19:	214
+#Linux 7.0:	125
+#Linux 7.1:	115
+#Linux 7.2:	7
