@@ -1,6 +1,6 @@
 require 'gruff'
-g = Gruff::Line.new(1024)
-g.title = 'CVEs per release'
+g = Gruff::Line.new(2048)
+g.title = 'CVE fixes per release'
 #g.labels = { 0 => '5/6', 1 => '5/15', 2 => '5/24', 3 => '5/30', 4 => '6/4',
 #             5 => '6/12', 6 => '6/21', 7 => '6/28' }
 #g.data ' ', [25, 36, 86, 39, 25, 31, 79, 88]
@@ -58,7 +58,7 @@ g.data(' ', [
         545,
         1246,
         1302,
-        1884],
+        2049],
 	'#72AE6E') # green
 
 g.write('cves_per_release.png')
