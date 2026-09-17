@@ -48,7 +48,7 @@ g.data(' ', [
         1247,
         1303,
         2105,
-        820],
+        1422],
 	'#72AE6E') # green
 
 g.write('cves_fixed_per_release.png')
